@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jokheeswar | AI & Data Science Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Animation keyframes */
+    @keyframes fadeSlideUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounceIn {
+      0% { transform: scale(0.95); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    .animated {
+      animation: fadeSlideUp 1s ease forwards;
+    }
+    .project h3 {
+      animation: bounceIn 0.8s ease-in-out;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <header class="header animated">
+    <h1 class="logo">Jokheeswar Bhaskar</h1>
+    <p class="tagline">AI & Data Science Portfolio</p>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section fade-in fade-slide-left">
+      <h2>About Me</h2>
+      <p>I am an AI and Data Science enthusiast passionate about building intelligent systems that create real-world impact. I'm currently pursuing my B.Sc. in Artificial Intelligence and Data Analytics and have experience in ML, deep learning, emotion recognition, and cloud deployment.</p>
+    </section>
+
+    <section id="skills" class="section fade-in stagger-fade">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Languages:</strong> Python, SQL, HTML/CSS, JavaScript</li>
+        <li><strong>Libraries:</strong> TensorFlow, PyTorch, scikit-learn, OpenCV, Hugging Face</li>
+        <li><strong>Cloud & Tools:</strong> AWS (EC2, S3, Lambda), Git, Streamlit, Docker, MongoDB</li>
+        <li><strong>Focus Areas:</strong> Deep Learning, NLP, Image Processing, Model Deployment, Fake Tweet Detection</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section fade-in fade-slide-right">
+
+      <h2>Featured Projects</h2>
+      <div class="project" style="animation-delay: 0.3s;">
+        <h3>🎧 EMOTIFY</h3>
+        <p>Multimodal AI system that recommends music based on real-time emotion detection using RoBERTa, CNN, and LSTM. Integrated with Spotify API and deployed on Streamlit.</p>
+      </div>
+      <div class="project">
+        <h3>🧬 Karyotype Analysis</h3>
+        <p>Used OpenCV and CNN to classify chromosomes and detect chromosomal abnormalities from microscope images.</p>
+      </div>
+      <div class="project">
+        <h3>🌱 Environmental Monitoring</h3>
+        <p>Used LSTM/GRU with L2 regularization to predict environmental parameters. Achieved 99.85% accuracy.</p>
+      </div>
+      <div class="project">
+        <h3>☁️ AWS Deployment</h3>
+        <p>Deployed ML models using AWS EC2, Lambda, and S3 with automated workflows and CI/CD.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section fade-in">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>ML Engineer Intern @ VCodez</strong> – Built AWS-based learning platform and emotion recognition system.</li>
+        <li><strong>ML Intern @ Arjun Vision Tech</strong> – Worked on fake tweet detection using machine learning and NLP.</li>
+        <li><strong>Machine Learning Intern @ Innovate Internship (Remote)</strong> – Developed supervised ML models and participated in research-oriented tasks.</li>
+        <li><strong>Intern @ EZ Learn Global</strong> – Deployed e-learning platform on AWS with real-time analytics and monitoring features.</li>
+      </ul>
+    </section>
+
+    <section id="certifications" class="section fade-in">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Cloud Architect – EZ Learn Global (EC2, Lambda, S3)</li>
+        <li>Data Analytics & Visualization – Accenture (Job Simulation)</li>
+        <li>Excel Skills – JPMorgan Chase & Co. (Job Simulation)</li>
+        <li>MongoDB Certification – MongoDB University</li>
+        <li>Python Programming – Guvi Geeks Network</li>
+        <li>Python Programming – SSI Institute</li>
+        <li>Python Programming – Udemy</li>
+        <li>Complete Web Development Bootcamp – Udemy</li>
+        <li>AWS Cloud Practitioner Basics – AWS Academy</li>
+        <li>AI for India 2.0 – Skill India</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section fade-in">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your@email.com">jokheeswar.priya@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/jokheeswarb" target="_blank">github.com/jokheeswarb</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jokheeswar-bhaskar-906554359/" target="_blank">linkedin.com/jokheeswarb</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Jokheeswar</p>
+  </footer>
+</body>
+</html>
